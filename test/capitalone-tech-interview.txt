@@ -1,0 +1,162 @@
+
+
+
+project-name
+	__init__.py
+	protegrity/
+		tokenizaiton/
+		detokenization/
+	src/
+	config/
+	testcases/
+		unittest-tests/
+		testsuite-tests/
+		regression-tests/
+
+	
+ESP scheduler on the edge node:
+	/scripts/
+	
+
+__init__(self):
+
+
+
+class SuperClass:
+
+	def __init__(self):
+		count = 10
+		
+	def getCount(self):
+		return self.count
+		
+class SubClass(SuperClass):
+
+	def __int__(self):
+		count = 33
+		
+	def getCount(self):
+		return super.getCount()	+ 33
+		
+@func_x
+def x():
+	print("this is function x")
+	
+@func_x
+def y():
+	print("this is function y")
+	
+y
+			
+c = SubClass()
+c.getCount()
+
+process, threads, ~co-routines
+lambda limitations
+
+
+
+
+TABLE: Employee 
+--------------
+ID, Name, Dept, Salary
+1,a,x,123
+2,b,x,234
+
+3,c,y,665
+4,d,y,665
+5,e,y,789
+6,f,y,456
+
+7,g,x,344
+
+OUTPUT:
+------
+Name, Dept, AVG(Salary/Dept)
+a,x,76
+b,x,76
+c,y,50
+d,y,50
+
+
+select
+	name,
+	dept,
+	avg() over(dept)
+from employee
+
+
+select
+	name,
+	dept,
+	d.avg_salary
+from employee e
+join 
+(select 
+	dept, 
+	avg(salary) as "avg_salary"
+from Employee
+group by dept
+) d
+on e.dept=d.dept
+
+
+select
+	name,
+	dept,
+	(select 
+		avg(salary) as "avg_salary" 
+		from Employee 
+		where employee.dept=dept
+		group by dept)
+	from employee
+	
+	
+
+CSV -> 
+	S3 -> 
+		DB -> 
+			TB0 -> TB1 & TB2
+			
+			
+S3
+
+Python daemon
+	- validations
+	- check protected data
+		- tokenize if protected
+	- write to dynamoDB
+	- systems manager - password
+	- connection to table
+	- check if table exists
+		- append if exists
+		- create new if does exist
+			
+dynamoDB
+	-  	
+
+s3
+	-file name
+	-date time
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
